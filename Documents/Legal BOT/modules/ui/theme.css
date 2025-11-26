@@ -1,0 +1,22 @@
+/* modules/ui/theme.css */
+:root{
+  --bg1: #0a0a0a;
+  --bg2: #121212;
+  --accent: #00b4d8;
+  --card: rgba(255,255,255,0.04);
+  --muted: #bdbdbd;
+  --radius: 12px;
+  --glass: rgba(255,255,255,0.04);
+  font-family: Inter, Poppins, sans-serif;
+}
+
+body { background: linear-gradient(135deg, var(--bg1) 20%, var(--bg2) 100%); color: white; }
+.chat-container { max-width: 900px; margin: 0 auto; padding: 16px; }
+.chat-box { background: var(--card); border-radius: var(--radius); padding: 18px; min-height: 400px; overflow:auto; }
+.user-bubble { background: linear-gradient(90deg,#0077b6,#00b4d8); color:#fff; padding:10px 14px; border-radius:14px 14px 2px 14px; display:inline-block; max-width:72%; margin:6px 0; }
+.bot-bubble { background: rgba(255,255,255,0.06); color:#fff; padding:10px 14px; border-radius:14px 14px 14px 2px; display:inline-block; max-width:78%; margin:6px 0; }
+.input-area { display:flex; gap:8px; margin-top:10px; }
+.mic-btn { background:var(--accent); border-radius:50%; width:48px; height:48px; color:#fff; display:flex; align-items:center; justify-content:center; border:none; }
+.send-btn { background:var(--accent); border-radius:8px; padding:10px 14px; color:#fff; border:none; }
+.sidebar-card { background: var(--glass); border-radius:10px; padding:12px; margin-bottom:10px; color:var(--muted); }
+.typing { font-style: italic; color: var(--muted); }
